@@ -7,7 +7,7 @@ import cors from 'cors';
 
 
 
-const servidor = new Server();
+const servidor = Server.instance;
 
 
 // bodyParse
