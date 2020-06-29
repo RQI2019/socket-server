@@ -16,10 +16,10 @@ servidor.app.use( bodyParser.json() );
 
 // cors
 
-servidor.app.use( cors( { origin: true, credentials: true } ) );
+servidor.app.use( cors( { origin: true, credentials: true }) );
 
 
-servidor.app.use( "/", router );
+servidor.app.use( '/', router );
 
 servidor.start( () => {
     console.log(`El servidor esta corriendo en el puerto ${SERVER_PORT}`);
